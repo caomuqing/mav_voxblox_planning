@@ -24,8 +24,8 @@ struct GoalPointSelectorParameters {
   // For the exploration planner.
   int num_exploration_samples = 15;
   int exp_modulus = 20;
-  double w_exploration = 1.0;
-  double w_goal = 0.5;
+  double w_exploration = 0.2;
+  double w_goal = 1.0;
 };
 
 class GoalPointSelector {

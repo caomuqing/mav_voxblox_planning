@@ -18,7 +18,7 @@ VoxbloxLocoPlanner::VoxbloxLocoPlanner(const ros::NodeHandle& nh,
       num_random_restarts_(5),
       random_restart_magnitude_(0.5),
       planning_horizon_m_(4.0),
-      use_shotgun_(true),
+      use_shotgun_(false),
       use_shotgun_path_(true),
       loco_(kD) {
   constraints_.setParametersFromRos(nh_private_);
